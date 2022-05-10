@@ -107,16 +107,17 @@ Once this is set up, you can start to develop the experience.
 After you have cloned the project code, configured **Firebase**, registered on **Onirix** account, designed the scenes associated with the hunt and written all the API keys, you can start testing the application and developing it more.
 
 To accomplish this, launch the application on localhost following the next steps:
+
 1. On one terminal window, navigate to the functions folder inside the backend one.
-    1.1. Run _npm install_ to get all the npm packages.
-    1.2. Then, _run npm run build:watch_ so a new bundle is built after every change.
+   - 1.1. Run _npm install_ to get all the npm packages.
+   - 1.2. Then, _run npm run build:watch_ so a new bundle is built after every change.
 2. On another terminal, navigate to the backend folder.
-    2.1. Execute _firebase init emulators_ and select at least _Functions_, _Firestore_ and _Storage_.
-    2.2. On the same terminal, _run firebase emulators:start_.
-    4.3. You should be able to see the **Firestore Emulator Suite** on http://localhost:4000. 
+   - 2.1. Execute _firebase init emulators_ and select at least _Functions_, _Firestore_ and _Storage_.
+   - 2.2. On the same terminal, _run firebase emulators:start_.
+   - 2.3. You should be able to see the **Firestore Emulator Suite** on http://localhost:4000. 
 3. On another terminal, navigate to the client folder.
-    3.1. Execute _npm install_ to get **Vue** and the other packages.
-    3.2. Run _npm run serve_ in order to deploy the web client on port 8080.
+   - 3.1. Execute _npm install_ to get **Vue** and the other packages.
+   - 3.2. Run _npm run serve_ in order to deploy the web client on port 8080.
 
 > Apart from third party packages, the client application depends on two Onirix libraries: [@onirix/api-client](https://www.npmjs.com/package/@onirix/api-client) and [@onirix/embed-sdk](https://www.npmjs.com/package/@onirix/embed-sdk). Make sure everything is correctly installed when running _npm install_.
 
