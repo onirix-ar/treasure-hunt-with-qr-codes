@@ -1,0 +1,18 @@
+:root {
+    --font-default: "Lato";
+    --font-title: "Poppins";
+
+    --color-form-background: #FFF;
+    --color-form-border: #dadbdc;
+
+    --color-font-dark: #311f55;
+    --color-font-light: white;
+
+    --color-background-dark: #180e2c;
+    --color-background-selected: #004b8e;
+    --color-background-light: #ededed;
+    --color-secondary: #7264f1;
+
+    --color-error: #e82b35;
+
+}

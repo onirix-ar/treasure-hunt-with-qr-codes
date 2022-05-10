@@ -1,0 +1,44 @@
+.admin {
+    header {
+        height: 64px;
+        color: white;
+        background-color: var(--color-background-dark);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 800;
+        & > *:last-child {
+            margin-right: 10px;
+            background-color: var(--color-secondary);
+        }
+    }
+    main {
+        height: calc(100vh - 64px);
+        background-color: var(--color-background-light);
+    }
+}
+
+.admin__menu {
+    li {
+        cursor: pointer;
+        font-family: "Poppins";
+        font-size: 20px;
+        font-weight: 800;
+        height: 64px;
+        padding: 20px;
+        box-sizing: border-box;
+        &.selected {
+            cursor: default;
+            background-color: var(--color-secondary);
+        }
+    }
+}
+
+button {
+    width: unset;
+    height: 70%;
+    &.close {
+        width: 40px;
+    }
+}
