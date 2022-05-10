@@ -24,25 +24,7 @@ Finally, select create project, wait for the process to complete and click _Cont
 ### Add and configure the application
 In the project overview page, select the </> icon in order to add a web app to the project, fill in the field with the name of the app (in this case “Ipsum Hunt”) and click _Register app_.
 
-After a short wait, **Firebase** will provide you with all the information you need to connect to it from the app. It will look something like this:
-
-```js
-const firebaseConfig = {
-  apiKey: "AIzaSyAiVB3GIJfmf25CU-OAVE7B1kOkJON1_9s",
-  authDomain: "ipsum-hunt.firebaseapp.com",
-  projectId: "ipsum-hunt",
-  storageBucket: "ipsum-hunt.appspot.com",
-  messagingSenderId: "753250555185",
-  appId: "1:753250555185:web:988af74a50930dca144c10",
-  measurementId: "G-JNBYV3VLJP"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-```
-
-Once you have copied it, head to the **index.ts** file under **client > src > services > firebase.service.js** in your project local repository and paste the values here:
+After a short wait, **Firebase** will provide you with all the information you need to connect to it from the app (API key, authDomain, projectId, ...). Once you have copied them, head to the **index.ts** file under **client > src > services > firebase.service.js** in your project local repository and paste the values here:
 
 ![Firebase service code](https://user-images.githubusercontent.com/15238295/167631069-e4ba84c5-5d15-4034-a26a-16fd3eb0b0e2.png)
 
