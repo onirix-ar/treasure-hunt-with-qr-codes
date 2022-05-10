@@ -109,7 +109,8 @@ To complete the game, the user will have to capture (click) in every objective e
 const logoNames = ["logo1", "logo2"];
 const logoPoints = [10, 20];
 ```
-!!! You can add more elements with different names to the scene, but they will not be taken into account for the game’s score if they are not in the code.
+
+> You can add more elements with different names to the scene, but they will not be taken into account for the game’s score if they are not in the code.
 
 ### Set up the token
 After you have created a project and the scenes that you want to play on the web application, you need to set your **Onirix API key** on the client so it can read your Studio data and pull the projects and scenes.
@@ -135,7 +136,7 @@ To accomplish this, launch the application on localhost following the next steps
     3.1. Execute _npm install_ to get **Vue** and the other packages.
     3.2. Run _npm run serve_ in order to deploy the web client on port 8080.
 
-!!! Apart from third party packages, the client application depends on two Onirix libraries: [@onirix/api-client](https://www.npmjs.com/package/@onirix/api-client) and [@onirix/embed-sdk](https://www.npmjs.com/package/@onirix/embed-sdk). Make sure everything is correctly installed when running _npm install_.
+> Apart from third party packages, the client application depends on two Onirix libraries: [@onirix/api-client](https://www.npmjs.com/package/@onirix/api-client) and [@onirix/embed-sdk](https://www.npmjs.com/package/@onirix/embed-sdk). Make sure everything is correctly installed when running _npm install_.
 
 ### Create the event
 With everything up and running, navigate to http://localhost:8080/admin to see the administration options of the application.
@@ -144,9 +145,9 @@ As there is no created event because you have just started the app, it will auto
 * Event name.
 * Event logo.
 
-<img width=360" alt="Event creation form" src="https://user-images.githubusercontent.com/15238295/167632089-806fe0f2-ee86-4a4e-a3d4-635750a51d2c.png">
+<img width="360" alt="createevent" src="https://user-images.githubusercontent.com/15238295/167653729-5ad23d9d-5b5a-4ab4-9a5c-b5afb451c1a1.png">
 
-!!! You can cancel the form and keep using the app, however an event is needed in order to actually play the experience.
+> You can cancel the form and keep using the app, however an event is needed in order to actually play the experience.
 
 ### Add some booths
 Once you have created the event, you will have to create some booths where the images that serve as a start point for the AR experience will be defined. To achieve this, navigate to the “Booths” tab, select “New booth” and fill the form.
@@ -164,7 +165,7 @@ After saving the booth, you will be able to see its information on the table. It
 
 ![Booths tab](https://user-images.githubusercontent.com/15238295/167632236-9b6363f7-5057-4083-96a0-d1fecce8a0ad.png)
 
-!!! When users register on the app, their information will appear in the Registered tab and, when they complete a game, the data of each execution will be present in the Played games tab.
+> When users register on the app, their information will appear in the Registered tab and, when they complete a game, the data of each execution will be present in the Played games tab.
 
 ### Test the game
 Now that you have created an event and some booths with AR experiences linked, you can test them and play the game from the client.
@@ -172,7 +173,7 @@ First, open a booth’s game link on a new browser window. There you will be gre
 
 <img width="180" alt="Client landing page" src="https://user-images.githubusercontent.com/15238295/167632333-82a14520-c603-4aa9-b2cd-fc15188c2c44.png">
 
-!!! You can also generate a QR with the IP address marked as public on **Vue** console and the path of the game URL and scan it from your phone.
+> You can also generate a QR with the IP address marked as public on **Vue** console and the path of the game URL and scan it from your phone.
 
 As it is the first time that you open the client, there aren’t any users created and thus you will need to click the button and create a new one filling both steps of the form.
 
@@ -186,13 +187,13 @@ Then the **Onirix** app will be loaded and you will be able to start playing aft
 
 <img width="180" alt="Welcome view" src="https://user-images.githubusercontent.com/15238295/167632693-3b63b463-c157-48ef-b6ae-d39d5e7872de.png"><img width="180" alt="Booths view" src="https://user-images.githubusercontent.com/15238295/167632709-29e59de1-a534-409a-8caa-de1dfacd2c6b.png">
 
-## Step 5: Deploy your Scavenger Hunt
+## Step 6: Deploy your Scavenger Hunt
 In order to deploy your own scavenger hunt on a server, you will have to deploy the custom Firebase functions, serve the clients bundle from a server or cloud service and secure the administration panel so only the managers of the application can access it.
 
 ### Deploy firebase functions
 To correctly deploy the firebase functions on **index.ts** to the online **Firebase** application, you will need to open a new terminal and run the command _firebase deploy_. This will compile the code, connect to Google’s cloud services and deploy the functions there.
 
-!!! To achieve this you will need to upgrade your **Firebase** plan to the “Blaze (pay as you go)” billing plan.
+> To achieve this you will need to upgrade your **Firebase** plan to the “Blaze (pay as you go)” billing plan.
 
 ### Generate and serve the client’s bundle
 After the **Firebase** backend is deployed, your next action should be to serve the web application so it can be publicly accessed.
