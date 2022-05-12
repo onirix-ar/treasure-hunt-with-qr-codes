@@ -1,5 +1,12 @@
 # Treasure Hunt with QR Codes
-In [this tutorial](https://docs.onirix.com/tutorials/ipsum-hunt-tutorial) you will learn to set up and customize an AR scavenger hunt for events.
+In [this tutorial](https://docs.onirix.com/tutorials/treasure-hunt-with-qr-codes) you will learn to set up and customize an augmented reality scavenger hunt with Onirix, Firebase and Vue. This project can be used to provide a game-like experience to clients and visitors, for example, you could hide QR codes and use them to attract attention to stands at an event, shops at a mall, different points of interest at a festival, etc.
+
+The standard user experience will be:
+1. Users will find a QR code and proceed to scan it with their phone. This action will open the client browser.
+2. If they are not registered, they will need to input their email, a password and some basic information which will be stored. If they are registered but not logged in, they will need to write their credentials.
+3. Once they are registered and logged in, the AR game will start. It consists in capturing and collecting some AR elements like business logos that will be floating around the screen, by clicking on them. The objective for the user is to capture each one of them to increase their score.
+4. After completing a game, they can see their score and a list of every location that they have not visited yet so they know where to go and can continue playing.
+
 
 ## Step 1: Get the code
 The first thing you need is to download our template project from the **Onirix** repositories on Github. Open this link in a new tab, login with your GitHub account and select the _Fork_ option and fill the form. Through the _Fork_ functionality you will be able to make a personal copy of this repository and modify it freely.
