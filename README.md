@@ -1,6 +1,8 @@
 # Treasure Hunt with QR Codes
 In [this tutorial](https://docs.onirix.com/tutorials/treasure-hunt-with-qr-codes) you will learn to set up and customize an augmented reality scavenger hunt with Onirix, Firebase and Vue. This project can be used to provide a game-like experience to clients and visitors, for example, you could hide QR codes and use them to attract attention to stands at an event, shops at a mall, different points of interest at a festival, etc.
 
+![Treasure Hunt](https://user-images.githubusercontent.com/15238295/168020869-0be5641d-dcc3-48a1-849e-dbe7d0c0b814.jpeg)
+
 The standard user experience will be:
 1. Users will find a QR code and proceed to scan it with their phone. This action will open the client browser.
 2. If they are not registered, they will need to input their email, a password and some basic information which will be stored. If they are registered but not logged in, they will need to write their credentials.
