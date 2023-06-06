@@ -107,7 +107,7 @@ const logoPoints = [10, 20];
 ### Set up the token
 After you have created a project and the scenes that you want to play on the web application, you need to set your **Onirix API key** on the client so it can read your Studio data and pull the projects and scenes.
 
-To achieve this, select the project that you have just created, click the _Settings_ button on the top right corner, look for the “**Onirix token**” section and click “**Copy Onirix user token**” to copy your key to the clipboard. Finally, paste it on the **.env.development** and **env.production** files in the client folder.
+To achieve this, select the project that you have just created, click the _Settings_ button on the top right corner, look for the “**Onirix token**” section and click “**Copy Onirix user token**” to copy your key to the clipboard. Finally, paste it on the **.env.development** and **env.production** files in the client folder. These files must be created locally although they are created in the repository to be able to take their content as an example.
 
 ![Copy Onirix user token](https://user-images.githubusercontent.com/15238295/168049743-8aabf7c0-6fef-426d-b820-165d64a883b5.png)
 
